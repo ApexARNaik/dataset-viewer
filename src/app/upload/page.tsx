@@ -1,6 +1,8 @@
 import prisma from '@/lib/prisma';
 import UploadForm from '@/components/UploadForm';
 
+export const dynamic = 'force-dynamic';
+
 async function getTeammates() {
   return await prisma.teammate.findMany({
     select: { id: true, name: true }

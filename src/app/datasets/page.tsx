@@ -3,6 +3,8 @@ import DatasetCard from '@/components/DatasetCard';
 import ExportButtons from '@/components/ExportButtons';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 interface PageProps {
   searchParams: Promise<{ uploader?: string }>;
 }
